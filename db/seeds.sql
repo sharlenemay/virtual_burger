@@ -1,3 +1,3 @@
-INSERT INTO burgers (name) VALUES ('Plain and Simple');
-INSERT INTO burgers (name) VALUES ('California Style');
-INSERT INTO burgers (name) VALUES ('Seafoodie');
+INSERT INTO burgers (burger_name) VALUES ('Plain and Simple');
+INSERT INTO burgers (burger_name) VALUES ('California Style');
+INSERT INTO burgers (burger_name) VALUES ('Seafoodie');
