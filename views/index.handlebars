@@ -1,10 +1,10 @@
 <div class="jumbotron jumbotron-fluid">
-  <h1>Burgers!</h1>
+  <h1>Virtual Burgers!</h1>
 </div>
 
-<div class="container">
+<div class="container-fluid">
   <div class="row">
-    <div class="col-sm-4 offset-2">
+    <div class="col-sm-12 col-md-6">
       <h2>Burger Menu</h2>
       <ol>
         {{#each burgers}}
@@ -14,7 +14,7 @@
         {{/each}}
       </ol>
     </div>
-    <div class="col-sm-4 offset-1">
+    <div class="col-sm-4 col-md-6">
       <h2>Let's Eat!</h2>
       <ol>
         {{#each burgers}}
@@ -27,8 +27,8 @@
   </div>
 </div>
 <div class="container">
-  <div class="row">
-    <div class="col-sm-6 offset-4">
+  <div class="row add">
+    <div class="col-sm-12">
       <h2 class="add-a-burger-heading">Add a Burger</h2>
 
       <form class="create-form">
@@ -41,6 +41,8 @@
         <button type="submit">Add Burger</button>
 
       </form>
+
+      <a href="http://clipart-library.com/clipart/1241328.htm" target="_blank"><img src="/assets/burger.png" alt="burger" width="300px"></a>
     </div>
   </div>
 </div>
