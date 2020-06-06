@@ -1,7 +1,22 @@
 li {
   padding: 5px;
-  margin: 5px;
-  background: #faebd7;
+  margin: 10px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.row {
+  margin: 20px;
+}
+
+.col {
+  padding: 0px;
+}
+
+.jumbotron {
+  padding: 20px;
 }
 
 .label {

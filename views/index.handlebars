@@ -1,40 +1,49 @@
-<h1>Burgers!</h1>
+<div class="jumbotron jumbotron-fluid">
+  <h1>Burgers!</h1>
+</div>
 
-<h2>Burger Menu</h2>
-
-<ul>
-  {{#each burgers}}
-    {{#unless ordered}}
-      {{> burgers/burger-block ordered=true}}
-    {{/unless}}
-  {{/each}}
-</ul>
-
-<h2>Let's Eat!</h2>
-
-<ul>
-  {{#each burgers}}
-    {{#if ordered}}
-      {{> burgers/burger-block ordered=false}}
-    {{/if}}
-  {{/each}}
-</ul>
-
-<h2 class="add-a-burger-heading">Add a Burger</h2>
-<form class="create-form">
-
-  <div class="form-group">
-    <label for="addburger">Burger Name:</label>
-    <input type="text" id="ca" name="name">
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4 offset-2">
+      <h2>Burger Menu</h2>
+      <ol>
+        {{#each burgers}}
+        {{#unless ordered}}
+        {{> burgers/burger-block ordered=true}}
+        {{/unless}}
+        {{/each}}
+      </ol>
+    </div>
+    <div class="col-sm-4 offset-1">
+      <h2>Let's Eat!</h2>
+      <ol>
+        {{#each burgers}}
+        {{#if ordered}}
+        {{> burgers/burger-block ordered=false}}
+        {{/if}}
+        {{/each}}
+      </ol>
+    </div>
   </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6 offset-4">
+      <h2 class="add-a-burger-heading">Add a Burger</h2>
 
-  {{!-- <div class="form-group">
-    <label for="devour">Eat?</label><br>
-    <input type="radio" name="ordered" value="1" checked> To Eat!<br>
-    <input type="radio" name="ordered" value="0"> Devoured
-  </div> --}}
-  <button type="submit">Add Burger</button>
-</form>
+      <form class="create-form">
+
+        <div class="form-group">
+          <label for="addburger">Burger Name:</label>
+          <input type="text" id="ca" name="name">
+        </div>
+
+        <button type="submit">Add Burger</button>
+
+      </form>
+    </div>
+  </div>
+</div>
 
 <script>
   $(function(){
